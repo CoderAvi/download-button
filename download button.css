@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 50px;
+    width: 200px;
+    position: relative;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+}
+
+.child-1,.child-2,.child-3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.child-1{
+    background: chartreuse;
+}
+
+.child-2{
+    z-index: -1;
+}
+
+.child-3{
+    z-index: -2;
+    background: rgb(130,205,229);
+}
+
+.percentage{
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120%;
+    display: none;
+    font-size: 30px;
+}
+
+.complete{
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+/* javascript add class on event */
+
+.move{
+    transform: translate(60px,-60px);
+    transition: 1s;
+    opacity: 0;
+}
+
+.blink{
+    animation: blink 0.5s linear 0.2s;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
