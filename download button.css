@@ -85,3 +85,11 @@ body{
         opacity: 1;
     }
 }
+
+.mydiv{
+    display: inline-block;
+    position: relative;
+    color: black
+}
+
+    
