@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-body{
+.holder{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: sans-serif;
+    flex-direction: column;
 }
 
 .container{
@@ -65,7 +66,7 @@ body{
 /* javascript add class on event */
 
 .move{
-    transform: translate(60px,-60px);
+    transform: translate(0px,-60px);
     transition: 1s;
     opacity: 0;
 }
@@ -87,9 +88,8 @@ body{
 }
 
 .mydiv{
-    display: inline-block;
+    display: block;
     position: relative;
-    color: black
+    color: black;
+    margin-top: 100px;
 }
-
-    
